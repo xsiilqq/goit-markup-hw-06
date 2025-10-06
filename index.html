@@ -27,7 +27,7 @@
     <!-- HEADER SECTION -->
 
     <header class="header">
-      <div class="container">
+      <div class="container page-header-container">
         <nav class="nav">
           <a href="./index.html" class="link logo-header"
             >Web<span class="logo-text">Studio</span></a
@@ -44,6 +44,11 @@
             </li>
           </ul>
         </nav>
+        <button class="mobile-menu-open" type="button">
+          <svg class="mobile-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="header-address">
           <ul class="contact-list">
             <li class="contact">
@@ -65,7 +70,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="main-button" type="button">Order Service</button>
+          <button class="type main-button" type="button">Order Service</button>
         </div>
       </section>
 
@@ -81,6 +86,7 @@
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
+
               <h3 class="quality-subtitle">Strategy</h3>
               <p class="quality-text">
                 Our goal is to identify the business problem to walk away with
@@ -94,6 +100,7 @@
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
+
               <h3 class="quality-subtitle">Punctuality</h3>
               <p class="quality-text">
                 Bring the key message to the brand's audience for the best price
@@ -107,6 +114,7 @@
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
+
               <h3 class="quality-subtitle">Diligence</h3>
               <p class="quality-text">
                 Research and confirm brands with the strongest digital growth
@@ -120,6 +128,7 @@
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
+
               <h3 class="quality-subtitle">Technologies</h3>
               <p class="quality-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -138,6 +147,7 @@
           <ul class="team-list">
             <li class="team-item">
               <img
+                srcset="./images/mark2x.jpg 2x"
                 src="./images/img.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -185,6 +195,7 @@
 
             <li class="team-item">
               <img
+                srcset="./images/tom2x.jpg 2x"
                 src="./images/img-1.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -232,6 +243,7 @@
 
             <li class="team-item">
               <img
+                srcset="./images/camila2x.jpg 2x"
                 src="./images/img-2.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -279,6 +291,7 @@
 
             <li class="team-item">
               <img
+                srcset="./images/daniel2x.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -333,12 +346,14 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="img">
+              
                 <img
                   src="./images/img-5.jpg"
                   alt="Banking App"
                   width="360"
                   height="300"
                 />
+
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -353,12 +368,15 @@
 
             <li class="portfolio-item">
               <div class="img">
+              
                 <img
+                srcset="./images/img-6-2x.jpg 2x"
                   src="./images/img-6.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
                 />
+
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -379,6 +397,7 @@
                   width="360"
                   height="300"
                 />
+
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -399,6 +418,7 @@
                   width="360"
                   height="300"
                 />
+
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -635,6 +655,83 @@
 
           <button class="send-btn" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+
+    <!--------mobile menu -------->
+
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close" type="button">
+          <svg class="mobile-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-nav">
+        <ul class="modal-nav-list">
+          <li class="modal-item">
+            <a href="./index.html" class="link nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="link nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="link nav-link">Contacts</a>
+          </li>
+        </ul>
+
+        <address class="modal-address">
+          <ul class="mobile-contact-list">
+            <li class="contact">
+              <a href="mailto:info@devstudio.com" class="link contact-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact">
+              <a href="tel:+110001111111" class="link contact-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <div class="container-social-media">
+          <ul class="media-modal-icons">
+            <li class="social-modal">
+              <a href="#" class="social-media-link">
+                <svg class="social_media" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-modal">
+              <a href="#" class="social-media-link">
+                <svg class="social_media" width="24" height="24">
+                  <use href="./images/icons.svg#icon-Group"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-modal">
+              <a href="#" class="social-media-link">
+                <svg class="social_media" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-modal">
+              <a href="#" class="social-media-link">
+                <svg class="social_media" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
